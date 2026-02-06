@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*CSS da navbar*/
+nav{
+  
+  
+  padding: 2%;
+  background: #2d3c66;
+  color: #ffffff;
+  
+
+  
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-evenly;
+  
+  list-style: none;
+  
+}
+
+nav a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*CSS da introdução*/
+
+.introducao-section{
+  margin-top: 5%;
+margin-left: 5%;
+margin-right: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.introducao-section img{
+  
+  width: 400px;
+}
+
+.introducao-section p, h2{
+  margin-top: 2%;
+  margin-left: 7%;
+}
+
+
+/*CSS dos parceiros da empresa*/
+
+.parceiros-section{
+  padding: 5%;
+  background-color: #2d3c66;
+  color: #ffffff;
+  margin-top: 9%;
+  text-align: center;
+  
+  
+}
+
+.parceiros-section .imagens{
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.parceiros-section .imagens img{
+  width: 240px;
+  height: 240px;
+  object-fit: cover; /* Corta a imagem para preencher */
+  object-position: center; /* Centraliza o corte */
+}
+
+
+/*CSS da seção de feedback*/
+
+.feedback-section {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+ h1 {
+  margin-top: 7%;
+  
+  text-align: center;
+}
+
+.feedback-card {
+  background: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.feedback-card img{
+  margin: 10px;
+    border-radius: 100%;
+    width: 7%;
+    height: 7%;
+    margin-right: 2%;
+    
+}
+
+.info-user{
+    display: flex;
+    
+    
+}
+
+.info-user p{
+  margin-top: 20px;
+
+}
+
+
+.feedback-card .italico {
+    font-style: italic;
+  
+  
+}
+
+
+.feedback-form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+
+.feedback-form textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  resize: none;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.feedback-form button {
+    width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #278a00;
+  color: white;
+  cursor: pointer;
+
+}
+
+.imagem3{
+     object-fit: cover; /* Corta a imagem para preencher */
+  object-position: center; /* Centraliza o corte */
+    width: 450px;
+    height: auto;
+}
+
+
+/*CSS da solicitação*/
+
+.solicitacao-section{
+  margin-top: 10%;
+  text-align: center;
+}
+
+.botoes{
+  display: flex;
+  justify-self: center;
+  margin-top: 3%;
+  margin-bottom: 6%;
+  gap: 10%;
+}
+.solicitacao-section a{
+
+  color: #ffffff;
+  width: 400px;
+  height: 100px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.botao1{
+  background-color: #278a00;
+}
+
+.botao2{
+  background-color: #606160;
+}
+
