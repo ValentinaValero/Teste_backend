@@ -42,9 +42,10 @@ margin-right: 5%;
 .introducao-section img{
   
   width: 400px;
+  border-radius: 10px;
 }
 
-.introducao-section p, h2{
+.introducao-section p, .introducao-section h2{
   margin-top: 2%;
   margin-left: 7%;
 }
@@ -66,6 +67,7 @@ margin-right: 5%;
   margin-top: 4%;
   display: flex;
   justify-content: space-around;
+  
 }
 
 .parceiros-section .imagens img{
@@ -73,6 +75,7 @@ margin-right: 5%;
   height: 240px;
   object-fit: cover; /* Corta a imagem para preencher */
   object-position: center; /* Centraliza o corte */
+  border-radius: 10px;
 }
 
 
@@ -106,6 +109,7 @@ margin-right: 5%;
     width: 7%;
     height: 7%;
     margin-right: 2%;
+    border-radius: 10px;
     
 }
 
@@ -152,14 +156,21 @@ margin-right: 5%;
     width: 100%;
   padding: 10px 20px;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
   background-color: #278a00;
   color: white;
   cursor: pointer;
+  
 
 }
 
+.feedback-form button:hover{
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+
 .imagem3{
+  border-radius: 20px;
      object-fit: cover; /* Corta a imagem para preencher */
   object-position: center; /* Centraliza o corte */
     width: 450px;
@@ -174,12 +185,15 @@ margin-right: 5%;
   text-align: center;
 }
 
+
+
 .botoes{
   display: flex;
   justify-self: center;
   margin-top: 3%;
   margin-bottom: 6%;
   gap: 10%;
+  
 }
 .solicitacao-section a{
 
@@ -190,6 +204,8 @@ margin-right: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
+  font-size: 20px;
   
 }
 
@@ -199,5 +215,10 @@ margin-right: 5%;
 
 .botao2{
   background-color: #606160;
+}
+
+.solicitacao-section a:hover{
+  transform: scale(1.03);
+  transition: 0.4s;
 }
 
