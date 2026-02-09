@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Formatura 2024</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="pagina">
+        <!-- Lado esquerdo com foto -->
+        <div class="parte-foto">
+            <div class="fundo-azul">
+                <div class="cabecalho">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h1>Formandos 2026</h1>
+                </div>
+
+                <div class="mensagem">
+                    <h2>Bem-vindo de volta!</h2>
+                    <p>Faça login para acessar todas as novidades da sua formatura.</p>
+
+                    <div class="recursos">
+                        <div class="recurso">
+                            <i class="fas fa-camera"></i>
+                            <div>
+                                <h3>Veja seu albúm de formatura!</h3>
+                                <p>Todas as fotos e vídeos da sua turma está aqui/p>
+                            </div>
+                        </div>
+
+                        <div class="recurso">
+                            <i class="fas fa-calendar-check"></i>
+                            <div>
+                                <h3>Cheque sua programação conosco</h3>
+                                <p>Datas e informações, não perca nada!</p>
+                            </div>
+                        </div>
+
+                        <div class="recurso">
+                            <i class="fas fa-comments"></i>
+                            <div>
+                                <h3>Há alguma dúvida sobre o processo? Fale conosco</h3>
+                                <p>Envie suas perguntas para nossa central de atendimento!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- Lado direito com login -->
+        <div class="parte-login">
+            <div class="formulario-login">
+                <div class="topo-form">
+                    <h2>Entrar na conta</h2>
+                    <p class="subtitulo">Use seu e-mail e senha cadastrados</p>
+                </div>
+
+                <form action="#">
+                    <!-- E-mail -->
+                    <div class="campo-login">
+                        <label for="email">E-mail</label>
+                        <div class="input-login">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                        </div>
+                    </div>
+
+                    <!-- Senha -->
+                    <div class="campo-login">
+                        <div class="linha-senha">
+                            <label for="senha">Senha</label>
+                            <a href="#" class="esqueci-senha">Esqueci a senha</a>
+                        </div>
+                        <div class="input-login">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+                            <i class="fas fa-eye ver-senha"></i>
+                        </div>
+                    </div>
+
+                    <!-- Lembrar de mim -->
+                    <div class="lembrar">
+                        
+                        <label for="lembrar">
+                            <i class="fas fa-check-square"></i>
+                            Manter conectado
+                        </label>
+                    </div>
+
+                    <!-- Botão de entrar -->
+                    <button type="button" class="botao-entrar">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Entrar na conta
+                    </button>
+
+                    <!-- Divisor -->
+                    <div class="divisor">
+                        <span>ou</span>
+                    </div>
+
+                    <!-- Cadastrar -->
+                    <div class="cadastrar-opcao">
+                        <p>É novo por aqui?</p>
+                        <a href="cadastro.html" class="botao-cadastrar">
+                            <i class="fas fa-user-plus"></i>
+                            Criar uma conta
+                        </a>
+                    </div>
+
+                    <!-- Voltar -->
+                    <div class="voltar-site">
+                        <a href="#">
+                            <i class="fas fa-arrow-left"></i>
+                            Voltar para o site principal
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+            
+        </div>
+    </div>
+</body>
+
+</html>
