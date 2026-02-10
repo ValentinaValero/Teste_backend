@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento PIX - Formatura 2024</title>
+    <link rel="stylesheet" href="pagamentopix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container-pix">
+        <!-- Cabeçalho -->
+        <header class="header-pix">
+            <a href="pagamento.html" class="btn-voltar">
+                <i class="fas fa-arrow-left"></i>
+                Voltar
+            </a>
+            <div class="logo-pix">
+                <i class="fas fa-graduation-cap"></i>
+                <h1>Pagamento PIX</h1>
+            </div>
+        </header>
+
+        <div class="conteudo-pagina">
+            <!-- Lado esquerdo - Informações -->
+            <div class="lado-esquerdo">
+                <div class="card-info">
+                    <h2><i class="fas fa-receipt"></i> Resumo do Pedido</h2>
+
+                    <div class="produto">
+                        <div class="item">
+                            <span>Formatura 2026 - Pacote Completo</span>
+                            <span class="valor">R$ 350,00</span>
+                        </div>
+                        <div class="descricao">
+                            <p><i class="fas fa-check"></i> Ingresso para a festa</p>
+                            <p><i class="fas fa-check"></i> Álbum de fotos digital</p>
+                            <p><i class="fas fa-check"></i> Diploma de participação</p>
+                        </div>
+                    </div>
+
+                    <div class="total">
+                        <div class="linha-total">
+                            <span>Total</span>
+                            <span class="valor-total">R$ 350,00</span>
+                        </div>
+                        <p class="info-desconto"><i class="fas fa-tag"></i> Pagamento à vista • Sem juros</p>
+                    </div>
+
+                    <div class="beneficios">
+                        <h3><i class="fas fa-gift"></i> Benefícios do PIX:</h3>
+                        <div class="beneficio">
+                            <i class="fas fa-bolt"></i>
+                            <div>
+                                <h4>Pagamento instantâneo</h4>
+                                <p>Confirmação em segundos</p>
+                            </div>
+                        </div>
+                        <div class="beneficio">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>100% seguro</h4>
+                                <p>Transação protegida</p>
+                            </div>
+                        </div>
+                        <div class="beneficio">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <div>
+                                <h4>Sem taxas</h4>
+                                <p>Não cobramos nada a mais</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-ajuda">
+                    <h3><i class="fas fa-question-circle"></i> Precisa de ajuda?</h3>
+                    <p>Entre em contato com nossa equipe:</p>
+                    <div class="contatos">
+                        <p><i class="fas fa-envelope"></i> formatura2024@escola.com</p>
+                        <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lado direito - Pagamento PIX -->
+            <div class="lado-direito">
+                <div class="card-pagamento">
+                    <div class="status-pagamento">
+                        <div class="etapas">
+                            <div class="etapa ativo">
+                                <div class="numero">1</div>
+                                <span>Gerar PIX</span>
+                            </div>
+                            <div class="linha"></div>
+                            <div class="etapa">
+                                <div class="numero">2</div>
+                                <span>Pagar</span>
+                            </div>
+                            <div class="linha"></div>
+                            <div class="etapa">
+                                <div class="numero">3</div>
+                                <span>Confirmar</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2><i class="fas fa-qrcode"></i> Pague com PIX</h2>
+                    <p class="instrucao-principal">Escaneie o QR Code abaixo usando o aplicativo do seu banco</p>
+
+                    <div class="qr-code-container">
+                        <!-- QR Code -->
+                        <div class="qr-code-card">
+                            <div class="qr-code">
+                                <!-- Código QR simulado -->
+                                <div class="qr-simulado">
+                                    <div class="qr-padrao">
+                                        <!-- Padrão de QR Code simulado -->
+                                        <div class="quadrados">
+                                            <!-- Quadrados do QR code -->
+                                            <div class="quadrado grande"></div>
+                                            <div class="quadrado medio"></div>
+                                            <div class="quadrado medio"></div>
+                                            <div class="quadrado medio"></div>
+                                            <div class="quadrado pequeno"></div>
+                                            <div class="quadrado pequeno"></div>
+                                            <div class="quadrado pequeno"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="valor-qr">
+                                <span>Valor:</span>
+                                <strong>R$ 350,00</strong>
+                            </div>
+                        </div>
+
+                        <!-- Código PIX copiável -->
+                        <div class="codigo-pix">
+                            <h3><i class="fas fa-copy"></i> Código PIX</h3>
+                            <p>Copie o código abaixo se preferir colar no app:</p>
+                            <div class="codigo-container">
+                                <div class="codigo-texto" id="codigoPix">
+                                    00020126360014BR.GOV.BCB.PIX0114+5511999999999
+                                </div>
+                                <button class="btn-copiar" onclick="copiarCodigo()">
+                                    <i class="fas fa-copy"></i> Copiar
+                                </button>
+                            </div>
+                            <p class="dica-codigo"><i class="fas fa-lightbulb"></i> Cole no campo PIX do seu banco</p>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="passos-pagamento">
+                        <h3><i class="fas fa-mobile-alt"></i> Como pagar:</h3>
+                        <div class="passos">
+                            <div class="passo">
+                                <div class="numero-passo">1</div>
+                                <div class="texto-passo">
+                                    <h4>Abra o app do seu banco</h4>
+                                    <p>Vá até a opção "Pagar com PIX"</p>
+                                </div>
+                            </div>
+                            <div class="passo">
+                                <div class="numero-passo">2</div>
+                                <div class="texto-passo">
+                                    <h4>Escaneie o QR Code</h4>
+                                    <p>Use a câmera do seu celular</p>
+                                </div>
+                            </div>
+                            <div class="passo">
+                                <div class="numero-passo">3</div>
+                                <div class="texto-passo">
+                                    <h4>Confirme o pagamento</h4>
+                                    <p>Verifique o valor e confirme</p>
+                                </div>
+                            </div>
+                            <div class="passo">
+                                <div class="numero-passo">4</div>
+                                <div class="texto-passo">
+                                    <h4>Aguarde a confirmação</h4>
+                                    <p>É rápida e automática</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alertas">
+                        <div class="alerta">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div>
+                                <h4>Importante</h4>
+                                <p>Após o pagamento, aguarde a confirmação automática. Você receberá um e-mail com o
+                                    comprovante.</p>
+                            </div>
+                        </div>
+                        <div class="alerta seguranca">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Pagamento seguro</h4>
+                                <p>Esta transação é 100% segura e seus dados estão protegidos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="acoes">
+                        <a href="pagamento.html" class="btn-alterar">
+                            <i class="fas fa-credit-card"></i>
+                            Pagar com cartão
+                        </a>
+                        <button class="btn-ajuda">
+                            <i class="fas fa-question-circle"></i>
+                            Ajuda
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        <footer class="footer-pix">
+            <div class="seguranca-info">
+                <i class="fas fa-lock"></i>
+                <div>
+                    <p><strong>Transação segura</strong></p>
+                    <p>Dados criptografados • Sistema protegido</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Formatura 2024 • Ensino Médio • Todos os direitos reservados</p>
+            </div>
+        </footer>
+    </div>
+
+</html>

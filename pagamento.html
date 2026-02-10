@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - Formatura 2024</title>
+    <link rel="stylesheet" href="pagamento.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="pagina">
+        <!-- Lado esquerdo com informações -->
+        <div class="parte-info">
+            <div class="fundo-azul">
+                <div class="cabecalho">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h1>Formandos 2026 <h1>
+                </div>
+
+                <div class="resumo-pagamento">
+                    <h2>Quase lá Falta pouco para garantir sua tão sonhada formatura!</h2>
+                    <p>Complete o pagamento para obter todas as informações.</p>
+
+                    <div class="valor-total">
+                        <div class="valor">
+                            <span>Valor total</span>
+                            <strong>R$ 350,00</strong>
+                        </div>
+                        <div class="parcelas">
+                            <span>Ou 3x de R$ 116,67</span>
+                        </div>
+                    </div>
+
+                    <div class="itens">
+                        <h3>O que está incluído:</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Ingresso para a festa</li>
+                            <li><i class="fas fa-check"></i> Brinde de formatura</li>
+                            <li><i class="fas fa-check"></i> Álbum de fotos digital</li>
+                            <li><i class="fas fa-check"></i> Diploma de participação</li>
+                            <li><i class="fas fa-check"></i> Acesso ao site exclusivo</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-pagamento">
+                        <i class="fas fa-shield-alt"></i>
+                        <p>Pagamento 100% seguro. Seus dados estão protegidos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lado direito com formulário de pagamento -->
+        <div class="parte-pagamento">
+            <div class="formulario-pagamento">
+                <div class="topo-form">
+                    <h2>Forma de pagamento</h2>
+                    <p class="subtitulo">Escolha como quer pagar</p>
+                </div>
+
+                <form action="#">
+                    <!-- Opções de pagamento -->
+                    <div class="opcoes-pagamento">
+                        <div class="opcao ativa">
+                            <input type="radio" id="cartao" name="pagamento" checked>
+                            <label for="cartao">
+                                <i class="fas fa-credit-card"></i>
+                                <span>Cartão de crédito</span>
+                            </label>
+                        </div>
+
+
+                        <div class="opcao" id="opcao-pix">
+                            <a href="pagamentopix.html" class="link-pix">
+                                <i class="fas fa-qrcode"></i>
+                                <span>PIX</span>
+                            </a>
+                        </div>
+
+                       
+
+                    </div>
+
+                    <!-- Dados do cartão -->
+                    <div class="dados-cartao mostrar">
+                        <h3>Dados do cartão</h3>
+
+                        <div class="campo-pagamento">
+                            <label for="numero-cartao">Número do cartão</label>
+                            <div class="input-pagamento">
+                                <i class="fas fa-credit-card"></i>
+                                <input type="text" id="numero-cartao" name="numero-cartao"
+                                    placeholder="0000 0000 0000 0000">
+                            </div>
+                        </div>
+
+                        <div class="linha-campos">
+                            <div class="campo-pagamento">
+                                <label for="validade">Validade (MM/AA)</label>
+                                <div class="input-pagamento">
+                                    <i class="fas fa-calendar"></i>
+                                    <input type="text" id="validade" name="validade" placeholder="MM/AA">
+                                </div>
+                            </div>
+
+                            <div class="campo-pagamento">
+                                <label for="cvv">CVV</label>
+                                <div class="input-pagamento">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="text" id="cvv" name="cvv" placeholder="123">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="campo-pagamento">
+                            <label for="nome-cartao">Nome no cartão</label>
+                            <div class="input-pagamento">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="nome-cartao" name="nome-cartao"
+                                    placeholder="Como está no cartão">
+                            </div>
+                        </div>
+
+                        <div class="campo-pagamento">
+                            <label for="parcelas">Parcelas</label>
+                            <div class="input-pagamento">
+                                <i class="fas fa-credit-card"></i>
+                                <select id="parcelas" name="parcelas">
+                                    <option value="1">1x de R$ 350,00 (à vista)</option>
+                                    <option value="2">2x de R$ 175,00</option>
+                                    <option value="3" selected>3x de R$ 116,67</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dados do PIX -->
+                    <div class="dados-pix">
+                        <div class="info-pix">
+                            <i class="fas fa-qrcode grande"></i>
+                            <p>Após confirmar, será gerado um QR Code para pagamento via PIX.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Dados pessoais -->
+                    <div class="dados-pessoais">
+                        <h3>Seus dados</h3>
+                        <div class="campo-pagamento">
+                            <label for="email-pagamento">E-mail para receber comprovante</label>
+                            <div class="input-pagamento">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email-pagamento" name="email-pagamento"
+                                    placeholder="seu@email.com">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Termos -->
+                    <div class="termos-pagamento">
+                        <input type="checkbox" id="termos-pagamento" name="termos-pagamento" required>
+                        <label for="termos-pagamento">
+                            <i class="fas fa-file-contract"></i>
+                            Li e aceito os termos de cancelamento e reembolso
+                        </label>
+                    </div>
+
+                    <!-- Botão de pagar -->
+                    <button type="button" class="botao-pagar">
+                        <i class="fas fa-lock"></i>
+                        Finalizar pagamento
+                    </button>
+
+                    <!-- Voltar -->
+                    <div class="voltar">
+                        <a href="#">
+                            <i class="fas fa-arrow-left"></i>
+                            Voltar para minhas informações
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
