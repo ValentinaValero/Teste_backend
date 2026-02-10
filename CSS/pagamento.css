@@ -1,0 +1,580 @@
+/* Configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    min-height: 100vh;
+}
+
+.pagina {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Lado esquerdo com informações */
+.parte-info {
+    flex: 1;
+    background-color: #2d3c66;
+}
+
+.fundo-azul {
+    background-color: #2d3c66;
+    color: white;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.cabecalho i {
+    font-size: 42px;
+    margin-right: 15px;
+    color: white;
+}
+
+.cabecalho h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.resumo-pagamento h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.resumo-pagamento>p {
+    font-size: 18px;
+    margin-bottom: 35px;
+    opacity: 0.9;
+    max-width: 90%;
+}
+
+.valor-total {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 35px;
+    border-left: 5px solid #4CAF50;
+}
+
+.valor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.valor span {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.valor strong {
+    font-size: 40px;
+    font-weight: 700;
+    color: #4CAF50;
+}
+
+.parcelas {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.parcelas span {
+    font-size: 16px;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+}
+
+.parcelas span:before {
+    content: "•";
+    margin-right: 8px;
+    color: #4CAF50;
+}
+
+
+
+.itens h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.itens ul {
+    list-style: none;
+}
+
+.itens li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 17px;
+    padding: 8px 0;
+}
+
+.itens i {
+    color: #4CAF50;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.info-pagamento {
+    margin-top: auto;
+    background-color: rgba(76, 175, 80, 0.15);
+    padding: 18px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.info-pagamento i {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #4CAF50;
+}
+
+.info-pagamento p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Lado direito com formulário */
+.parte-pagamento {
+    flex: 1.2;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 40px;
+    overflow-y: auto;
+}
+
+.formulario-pagamento {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.topo-form h2 {
+    color: #2d3c66;
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitulo {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+/* Opções de pagamento */
+.opcoes-pagamento {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.opcao {
+    flex: 1;
+    position: relative;
+}
+
+/* Estilo para a opção de cartão (radio button) */
+.opcao:first-child input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.opcao:first-child label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+    height: 100%;
+    background-color: #f9f9f9;
+}
+
+.opcao.ativa label {
+    border-color: #2d3c66;
+    background-color: rgba(45, 60, 102, 0.05);
+}
+
+.opcao:first-child label i,
+.opcao:first-child label span {
+    color: #555;
+    transition: color 0.3s;
+}
+
+.opcao.ativa label i,
+.opcao.ativa label span {
+    color: #2d3c66;
+}
+
+.opcao:first-child:hover label {
+    border-color: #2d3c66;
+}
+
+/* Estilo para a opção de PIX (link) */
+.link-pix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+    height: 100%;
+    background-color: #f9f9f9;
+    text-decoration: none;
+    color: #555;
+}
+
+.link-pix:hover {
+    border-color: #2d3c66;
+    background-color: rgba(45, 60, 102, 0.05);
+    color: #2d3c66;
+}
+
+.link-pix i {
+    font-size: 28px;
+    color: #666;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.link-pix span {
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.link-pix:hover i,
+.link-pix:hover span {
+    color: #2d3c66;
+}
+
+.opcao i {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.opcao span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Seções de dados de pagamento */
+.dados-pagamento {
+    margin-bottom: 30px;
+    padding: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: #f9fafc;
+}
+
+.mostrar {
+    display: block;
+}
+
+.dados-pagamento h3 {
+    color: #2d3c66;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Campos do formulário */
+.campo-pagamento {
+    margin-bottom: 20px;
+}
+
+.campo-pagamento label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2d3c66;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.linha-campos {
+    display: flex;
+    gap: 20px;
+}
+
+.linha-campos .campo-pagamento {
+    flex: 1;
+}
+
+.input-pagamento {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-pagamento i {
+    position: absolute;
+    left: 15px;
+    color: #2d3c66;
+    font-size: 17px;
+}
+
+.input-pagamento input,
+.input-pagamento select {
+    width: 100%;
+    padding: 16px 16px 16px 45px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.input-pagamento input:focus,
+.input-pagamento select:focus {
+    outline: none;
+    border-color: #2d3c66;
+    box-shadow: 0 0 0 3px rgba(45, 60, 102, 0.1);
+}
+
+/* Dados pessoais */
+.dados-pessoais {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.dados-pessoais h3 {
+    color: #2d3c66;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Termos */
+.termos-pagamento {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+    padding: 20px;
+    background-color: #f5f7fa;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.termos-pagamento input {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    accent-color: #2d3c66;
+}
+
+.termos-pagamento label {
+    font-size: 15px;
+    color: #333;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.termos-pagamento label i {
+    color: #2d3c66;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+/* Botão de pagar */
+.botao-pagar {
+    background-color: #2d3c66;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.botao-pagar i {
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.botao-pagar:hover {
+    background-color: #233154;
+}
+
+/* Voltar */
+.voltar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.voltar a {
+    color: #666;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.voltar a i {
+    margin-right: 8px;
+}
+
+.voltar a:hover {
+    color: #2d3c66;
+}
+
+/* Rodapé */
+.rodape-pagamento {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.seguranca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.seguranca i {
+    color: #4CAF50;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Responsivo para celular */
+@media (max-width: 900px) {
+    .pagina {
+        flex-direction: column;
+    }
+
+    .parte-info {
+        min-height: 400px;
+    }
+
+    .fundo-azul {
+        padding: 25px;
+    }
+
+    .parte-pagamento {
+        padding: 30px 25px;
+    }
+
+    .cabecalho h1 {
+        font-size: 28px;
+    }
+
+    .resumo-pagamento h2 {
+        font-size: 30px;
+    }
+
+    .topo-form h2 {
+        font-size: 28px;
+    }
+
+    .opcoes-pagamento {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .linha-campos {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .valor strong {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fundo-azul {
+        padding: 20px;
+    }
+
+    .parte-pagamento {
+        padding: 25px 20px;
+    }
+
+    .cabecalho i {
+        font-size: 34px;
+    }
+
+    .cabecalho h1 {
+        font-size: 26px;
+    }
+
+    .resumo-pagamento h2 {
+        font-size: 28px;
+    }
+
+    .resumo-pagamento>p {
+        font-size: 16px;
+    }
+
+    .topo-form h2 {
+        font-size: 26px;
+    }
+
+    .subtitulo {
+        font-size: 16px;
+    }
+
+    .itens li {
+        font-size: 16px;
+    }
+
+    .botao-pagar {
+        padding: 18px;
+        font-size: 17px;
+    }
+
+    .valor-total {
+        padding: 20px;
+    }
+
+    .dados-pagamento {
+        padding: 20px;
+    }
+}

@@ -222,3 +222,14 @@ margin-right: 5%;
   transition: 0.4s;
 }
 
+.botao {
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 60px;
+  padding: 10px 20px;
+  background-color: #2d3c66;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}

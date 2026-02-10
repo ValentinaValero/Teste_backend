@@ -6,7 +6,6 @@ body {
     justify-content: center;   /* horizontal */
     align-items: center;       /* vertical */
         /* ocupa a tela inteira */
-    overflow: hidden;
     padding: 40px;
 
     background-image: url(https://storage.alboom.ninja/sites/1272/albuns/1156522/ucam-fotografia-de-formatura-retratos-de-formandos-aline-lelles-fotografia-afetiva-fotos-para-colacao-de-grau-cadeira-anel-de-formatura-beca-rio-de-janeiro-18.jpg?t=1680100235);
@@ -75,4 +74,8 @@ body {
 
         button:hover {
             background-color: #45a049;
+        }
+
+        select{
+            margin-top: 2%;
         }

@@ -5,13 +5,32 @@
             background-color: #f4f6f8;
         }
 
-        .banner {
+        .banner-cobertura {
             width: 100%;
             height: 300px;
-            background-image: url("https://meeventos.com.br/wp-content/uploads/2025/01/srt_42ab2c56b04105e9b028bd85a34ce317.jpg");
+            background-image: url("https://static-cse.canva.com/blob/2391474/40fotografosbrasileirosvoceprecisaconhecer.png");
             background-size: cover;
             background-position: center;
         }
+
+        .banner-essencial{
+            width: 100%;
+            height: 300px;
+            background-image: url("https://www.format.com/wp-content/uploads/Graduation_Group.jpg.jpg");
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .banner-completo{
+            width: 100%;
+            height: 300px;
+            background-image: url("https://storage.alboom.ninja/sites/30179/albuns/774999/promover-formaturas-sjc-14__2_.jpg?t=1611583389");
+            background-size: cover;
+            background-position: center;
+
+        }
+
 
         .container {
             max-width: 900px;
@@ -29,10 +48,19 @@
         }
 
         .price {
-            font-size: 22px;
+            font-size: 25px;
             color: #4CAF50;
             margin-bottom: 25px;
         }
+
+        .endereco {
+            
+            font-size: 19px;
+            color: #333333;
+            margin-bottom: 25px;
+        }
+
+        
 
         .alinhamento{
             display: flex;
@@ -43,6 +71,13 @@
         .alinhamento img{
             width: 200px;
             border-radius: 20px;
+        }
+
+        .alinhamento p{
+            font-weight: bold;
+            font-size: 17px;
+            color: rgb(184, 14, 14);
+
         }
 
         .specs h3 {
@@ -63,18 +98,27 @@
             margin-top: 40px;
         }
 
-        .cta button {
+        .cta a p{
+            margin: auto;
+        }
+
+        .cta a{
             background-color: #4CAF50;
+            text-align: center;
+            margin: auto;
+            display: flex;
             color: #fff;
             border: none;
             padding: 15px 30px;
+            width: 500px;
             font-size: 18px;
-            border-radius: 30px;
+            border-radius: 10px;
             cursor: pointer;
+            text-decoration: none;
             
         }
 
-        .cta button:hover {
-            transform: scale(1.03);
+        .cta a:hover {
+            transform: scale(1.02);
             transition: transform 0.5s ease;
         }

@@ -88,12 +88,12 @@ h1 {
 }
 
 .duas{
-    background-image:url('https://media-blog.keeperformaturas.com.br/wp-content/uploads/2024/06/baile-de-formatura.webp');
+    background-image:url('https://lcleventos.com.br/fotos/cb7c2d6eb9bd622e2fdd.jpg');
 
 }
 
 .tres{
-    background-image:url('https://lcleventos.com.br/fotos/cb7c2d6eb9bd622e2fdd.jpg');
+    background-image:url('https://media-blog.keeperformaturas.com.br/wp-content/uploads/2024/06/baile-de-formatura.webp');
 
 }
 
@@ -112,6 +112,20 @@ h1 {
     color: #4CAF50;
     margin: 12px 0;
     font-weight: bold;
+}
+
+.endereco{
+     font-size: 15px;
+    color: #333333;
+    margin: 12px 0;
+    font-weight: bold;
+
+}
+
+.plan-content p{
+    color: #c92e2e;
+    text-decoration: none;
+    font-size: 15px;
 }
 
 ul {
